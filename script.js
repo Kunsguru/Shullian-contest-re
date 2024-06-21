@@ -8,7 +8,7 @@ document.querySelector('.read-more-btn').addEventListener('click', function() {
             form.classList.toggle('hidden');
 
             const now = new Date();
-            const formattedDate = now.toISOString().slice(0, 10).replace(/-/g, '') + '-' + now.toTimeString().slice(0, 5).replace(/:/g, '');
+            const formattedDate = now.toISOString().slice(0, 10).replace(/-/g, '') + '-' + now.toTimeString().slice(0, 2).replace(/:/g, '') + '-' + now.toTimeString().slice(3, 5).replace(/:/g, '');
             document.getElementById('matric-number').value = formattedDate;
         }
 
@@ -41,7 +41,9 @@ document.querySelector('.read-more-btn').addEventListener('click', function() {
             window.location.href = mailtoLink;
 
             alert('Registration submitted successfully.');
+            document.getElementById('home-button').classList.remove('hidden');
         }
 
-
-                                    
+        function goBackHome() {
+            window.location.href = 'index.html'; // Change 'index.html' to your home page URL if different
+        }
