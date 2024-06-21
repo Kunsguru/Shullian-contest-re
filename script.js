@@ -47,6 +47,5 @@ const='<button onclick="window.location.href='https://shullian-stitches-and-cout
                                     
 window.location.href = hreflink;
 
-return;
                                            }
                     
