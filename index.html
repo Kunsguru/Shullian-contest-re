@@ -5,3 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
 <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="short-content-2">
+        <section class="contest-details">
+            <h2>Contest Details</h2>
+            <div>
+                <p>Our annual art contest and competition showcases talent from around the world.</p>
+            </div>
+            <div>
+                <p>Join us for a chance to win exciting prizes and showcase your creativity!</p>
+            </div>
+        </section>
+    </div>
+
+    <div id="full-content-2" class="hidden">
+        <section class="prizes">
+            <div>
+                <h2>Prizes</h2>
+                <ul>
+                    <li>1st Prize: ₦45,000 and a trophy</li>
+                    <li>2nd Prize: ₦22,500 and a certificate</li>
+                    <li>3rd Prize: ₦9,000 and a medal</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="gifts">
+            <div>
+                <h2>Gifts</h2>
+                <ul>
+                    <li>1st Prize: Sewing Machine industrial</li>
+                    <li>2nd Prize: Sewing Machine Manual</li>
+                    <li>3rd Prize: Sewing Supplies kits</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="venue">
+            <h2>Venue</h2>
+            <p>Location: Art Gallery, 13 Opeloyeru Street, Ikotun-Egbe, Lagos</p>
+            <p>Date: January 1st, 2025</p>
+        </section>
+
+        <section class="booking">
+            <h2>Booking Information</h2>
+            <p>To book your spot in the competition, please contact us at <a href="mailto:info@artcontest.com">info@artcontest.com</a>.</p>
+        </section>
+
+        <section class="ticket-fees">
+            <h2>Ticket Fees</h2>
+            <p>Early Bird: ₦2,250 (until December 15th, 2024)</p>
+            <p>Regular: ₦5,750</p>
+            <p>VIP: ₦16,000</p>
+        </section>
+
+        <button onclick="handleRegistrationClick()">Registration Form</button>
+    </div>
+
+    <button class="read-more-btn" data-target="full-content-2">Read More</button>
+
+    <div id="registration-form" class="hidden">
+        <h2>Registration Form</h2>
+        <form id="registration" onsubmit="handleFormSubmit(event)">
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" name="full-name" required>
+
+            <label for="matric-number">Matriculation Number</label>
+            <input type="text" id="matric-number" name="matric-number" readonly>
+
+            <label for="phone-number">Phone Number</label>
+            <input type="text" id="phone-number" name="phone-number" required>
+
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="payment-type">Payment Type</label>
+            <input type="radio" id="full-payment" name="payment-type" value="50000" checked>
+            <label for="full-payment">Full Payment: #50,000</label><br>
+            <input type="radio" id="instalment-payment" name="payment-type" value="25000">
+            <label for="instalment-payment">2 Part Instalment: #25,000</label><br>
+            <p>NB: bank opay, account number 7069728306, account name Monday Kingsley Ugochukwu</p>
+
+            <label for="receipt">Upload Receipt</label>
+            <input type="file" id="receipt" name="receipt" accept="image/*" required>
+
+            <button type="submit">Submit</button>
+        </form>
+        <button id="home-button" class="hidden" onclick="goBackHome()">Go Back Home</button>
+                </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
