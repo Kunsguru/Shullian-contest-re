@@ -45,7 +45,3 @@ document.querySelector('.read-more-btn').addEventListener('click', function() {
 
 
                                     
-window.location.href = hreflink;
-
-                                           }
-                    
