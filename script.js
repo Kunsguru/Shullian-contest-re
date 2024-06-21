@@ -43,3 +43,10 @@ document.querySelector('.read-more-btn').addEventListener('click', function() {
             alert('Registration submitted successfully.');
         }
 
+const='<button onclick="window.location.href='https://shullian-stitches-and-couture.onrender.com/'">Go Back to Home</button>';
+                                    
+window.location.href = hreflink;
+
+return;
+                                           }
+                    
